@@ -12,6 +12,7 @@ class OrderController extends Controller
      */
     public function index()
     {
+        //
         $orders=order::get();
         return view('order.index',compact('orders'));
     }
@@ -37,6 +38,7 @@ class OrderController extends Controller
      */
     public function show(string $id)
     {
+        //
         $order=order::find($id);
         return view('order.show',compact('order'));
     }
